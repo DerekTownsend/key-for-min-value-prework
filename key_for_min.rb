@@ -7,8 +7,6 @@ def key_for_min_value(name_hash)
   name_hash.collect do |key,value|
     if lowest_val==0 or value<lowest_val
       lowest_key=key
-      puts key
     end
   end
-  return lowest_key
 end
