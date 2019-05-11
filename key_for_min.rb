@@ -5,7 +5,7 @@ def key_for_min_value(name_hash)
   lowest_key=nil
   lowest_val=0
   name_hash.collect do |key,value|
-    if lowest_val==0 or value<lowest_val
+    if  value<lowest_val or lowest_val==0
       lowest_key=key
     end
   end
